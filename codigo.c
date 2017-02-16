@@ -3,6 +3,7 @@
 int main()
 {
 	long int dato1, dato2, respuesta, operacion;
+	
 	printf("Inserte el primer dato");
 	scanf("%d%*c",& dato1);
 	printf("Inserte el segundo dato");
