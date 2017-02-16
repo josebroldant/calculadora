@@ -12,16 +12,16 @@ int main()
 	printf("1.suma 2.resta 3.multiplicacion 4.division");
 	scanf("%d%*c",& operacion);
 	switch(operacion){
-		case operacion=1:
+		case 1:
 			suma(dato1, dato2, respuesta);
 			break;
-		case operacion=2:
+		case 2:
 			resta(dato1, dato2, respuesta);
 			break;
-		case operacion=3:
+		case 3:
 			multiplicacion(dato1, dato2, respuesta);
 			break;
-		case operacion=4:
+		case 4:
 			division(dato1, dato2, respuesta);
 			break;
 	}
