@@ -45,4 +45,9 @@ int multiplicacion(dato1, dato2, respuesta){
 int division(dato1, dato2, respuesta){
 	respuesta=dato1/dato2;
 	return;
-}
+	}
+
+
+	
+	
+	
