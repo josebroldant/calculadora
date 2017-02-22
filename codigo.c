@@ -1,53 +1,53 @@
 #include<stdio.h>
 
-int main()
-{
-	long int dato1, dato2, respuesta, operacion;
-	
-	printf("Inserte el primer dato");
-	scanf("%d%*c",& dato1);
-	printf("Inserte el segundo dato");
-	scanf("%d%*c",& dato2);
-	printf("Seleccione la operacion que desea hacer");
-	printf("1.suma /n 2.resta /n 3.multiplicacion /n 4.division");
+int suma(int numero1, int numero2);
+int resta(int numero1, int numero2);
+int multiplicacion(int numero1, int numero2);
+int division(int numero1, int numero2);
+
+int main(){
+	int numero1, numero2, multiplicar, sumar, restar, dividir, operacion;
+	printf("Inserte el primer dato: ");
+	scanf("%d%*c",& numero1);
+	printf("Inserte el segundo dato: ");
+	scanf("%d%*c",& numero2);
+	printf("Seleccione la operacion que desea hacer\n");
+	printf("1.suma \n2.resta \n3.multiplicacion \n4.division\n");
 	scanf("%d%*c",& operacion);
 	switch(operacion){
 		case 1:
-			suma(dato1, dato2, respuesta);
+			sumar=suma(numero1, numero2);
+			printf("La respuesta es:[ %d]\n", sumar);
 			break;
 		case 2:
-			resta(dato1, dato2, respuesta);
+			restar=resta(numero1, numero2);
+			printf("La respuesta es:[ %d]\n", restar);
 			break;
 		case 3:
-			multiplicacion(dato1, dato2, respuesta);
+			multiplicar=multiplicacion(numero1, numero2);
+			printf("La respuesta es:[ %d]\n", multiplicar);
 			break;
 		case 4:
-			division(dato1, dato2, respuesta);
+			dividir=division(numero1, numero2);
+			printf("La respuesta es:[ %d]\n", dividir);
 			break;
 	}
-	printf("La respuesta es:[ %d]\n", respuesta);
 }
 
-long int suma(dato1, dato2, respuesta){
-	respuesta=dato1+dato2;
-	return;
+int suma(int numero1, int numero2){
+	return numero1+numero2;
 	}
 
-long int resta(dato1, dato2, respuesta){
-	respuesta=dato1-dato2;
-	return;
+int resta(int numero1, int numero2){
+	return numero1-numero2;
+}
+	
+int multiplicacion(int numero1, int numero2){
+	return numero1*numero2;
 	}
-
-long int multiplicacion(dato1, dato2, respuesta){
-	respuesta=dato1*dato2;
-	return;
+int division(int numero1, int numero2){
+	return 	numero1/numero2;
 	}
-long int division(dato1, dato2, respuesta){
-	respuesta=dato1/dato2;
-	return;
-	}
-
-
 	
 	
 	
