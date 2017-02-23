@@ -31,6 +31,10 @@ int main(){
 			dividir=division(numero1, numero2);
 			printf("La respuesta es:[ %d]\n", dividir);
 			break;
+			default:
+			printf("opcion invalida");
+
+			
 	}
 }
 
@@ -46,6 +50,9 @@ int multiplicacion(int numero1, int numero2){
 	return numero1*numero2;
 	}
 int division(int numero1, int numero2){
+	if(numero2==0){
+	printf("no se puede dividir");
+}
 	return 	numero1/numero2;
 	}
 	
